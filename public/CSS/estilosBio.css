@@ -18,10 +18,12 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template:
-    "header header header "
+    "header   "
+    "navbar  navbar "
     "  inicioFoto1 "
-    "contenidoB   "
-    "contenidoB2";
+    "contenidoB "
+    "contenidoB2"
+    "footer footer";
   /*definimos plantilla*/
   grid-template-columns: 2fr 8fr 1fr;
   grid-template-rows: 2fr 8fr 1fr;
@@ -39,7 +41,13 @@ a:hover {
   color: orange;
 }
 
-header {
+header{
+  z-index: 2;
+  margin-left: 10px;
+
+}
+
+nav {
   /*background-color: darkseagreen;*/
   /* background-color: rgb(199, 223, 210);*/
   grid-area: header;
@@ -150,6 +158,30 @@ header {
   }
 }
 
+
+.footer1{
+  grid-area: footer;
+  background: rgb(177, 250, 229);
+  background: linear-gradient(
+    80deg,
+    rgb(121, 203, 187) 0%,
+    rgb(177, 233, 223) 44%,
+    rgb(213, 250, 248) 92%
+  );
+height: 80px;
+width: 110%;
+display: flex;
+justify-content: flex-start;
+margin-left: auto;
+margin-top: auto;
+}
+.footer1 img{
+grid-area: footer;
+  width: 5%;
+  height: 100% ;
+  
+}
+
 /*********************/
 .inicioFoto1 {
   grid-area: inicioFoto1;
@@ -158,7 +190,7 @@ header {
   position: relative;
   left: 90px;
   top: 100px;
-  background-image: url("../images/fotoHQ.jpg");
+  background-image: url("/public/images/fotoHQ.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   border-radius: 50px;
