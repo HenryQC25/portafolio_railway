@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Habilidades HQ</title>
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/estiloHabilidad.css">
+</head>
+<body>
+    <div class="gridH">
+    <header >
+        
+        <div class="navbar">
+            <div class="logo"></div>
+            <ul class="links">
+                <li><a href="index.html"><strong>Inicio</strong></a></li>
+                <li><a href="bio.html"><strong>Acerca de mí</strong></a></li>
+                <li><a href="habilidades.html"><strong>Habilidades</strong></a></li>
+                <li><a href="proyectos.html"><strong>Proyectos</strong></a></li>
+                <li><a href="contacto.html"><strong>Contactos</strong></a></li>
+            </ul>
+<div class="toggle_btn">
+    <i class="fa-solid fa-bars"></i>
+</div>
+    </div> 
+    <div class="dropdown_menu ">
+        <li><a href="index.html"><strong>Inicio</strong></a></li>
+        <li><a href="bio.html"><strong>Acerca de mí</strong></a></li>
+        <li><a href="habilidades.html"><strong>Habilidades</strong></a></li>
+        <li><a href="proyectos.html"><strong>Proyectos</strong></a></li>
+        <li><a href="contacto.html"><strong>Contactos</strong></a></li>
+    </div>
+</header>
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropdownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function(){
+        dropdownMenu.classList.toggle('open')
+        const isOpen = dropdownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+</script>
+
+<div class="contenido">
+<h2>Habilidades e Idiomas</h2>
+<hr>
+<h3>Idiomas</h3>
+<p>Ingles <br>
+    Proceso de curso nivel  A1-A2-B1 <br><br>
+        Español-castellano <br>
+            Nativo 
+    </p>
+<hr>
+<h3>Habilidades técnicas</h3>
+<p>Programación lenguaje C++, C#, Java(básico). <br>
+	Conocimiento en base de datos SQL . <br>
+	Desarrollo Web html, css (introductorio). <br>
+Conocimiento técnico manejo, configuración e instalación de audio profesional(digital-análogo). <br>
+	Conocimiento y manejo de documentos en la nube ej. google docs <br>
+	Conocimiento en paquetes de Microsoft Office <br>
+</p>
+<hr>
+<h3>Habilidades blandas</h3>
+<p>
+    Comunicación <br>
+	Trabajo en equipo <br>
+	Creatividad y criterio <br>
+	Organización <br>
+	Resolución de problemas <br>
+	Adaptación <br>
+
+</p>
+
+<hr>
+<p>Mis habilidades se han incrementado a base de practica y nuevas lecturas, 
+    proceso de cursos tanto personales como universitarios, involucrado en 
+    situaciones laborales, prácticas en áreas que permiten la labor voluntaria,
+     otras habilidades las he desarrollado con ayuda de mentores que han 
+     influido en mi personalidad, actualmente mis habilidades las utilizo en 
+     el área tecnológico y en relación con equipos de audio profesional por 
+     parte de las labores diarias.</p>
+    </div>
+</div>
+</body>
+</html>

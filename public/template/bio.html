@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Acerca de mí HQ</title>
+    <link rel="stylesheet" href="/CSS/normalize.css">
+    <link rel="stylesheet" href="/CSS/estilosBio.css">
+</head>
+<body>
+    <d iv class="gridBio">
+    <header >
+        
+        <div class="navbar">
+            <div class="logo"></div>
+            <ul class="links">
+                <li><a href="index.html"><strong>Inicio</strong></a></li>
+                <li><a href="bio.html"><strong>Acerca de mí</strong></a></li>
+                <li><a href="habilidades.html"><strong>Habilidades</strong></a></li>
+                <li><a href="proyectos.html"><strong>Proyectos</strong></a></li>
+                <li><a href="contacto.html"><strong>Contactos</strong></a></li>
+            </ul>
+<div class="toggle_btn">
+    <i class="fa-solid fa-bars"></i>
+</div>
+    </div> 
+
+
+    
+    <div class="dropdown_menu ">
+        <li><a href="index.html"><strong>Inicio</strong></a></li>
+        <li><a href="bio.html"><strong>Acerca de mí</strong></a></li>
+        <li><a href="habilidades.html"><strong>Habilidades</strong></a></li>
+        <li><a href="proyectos.html"><strong>Proyectos</strong></a></li>
+        <li><a href="contacto.html"><strong>Contactos</strong></a></li>
+    </div>
+</header>
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropdownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function(){
+        dropdownMenu.classList.toggle('open')
+        const isOpen = dropdownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+</script>
+
+
+<div class="inicioFoto1"></div>
+<div class="contenidoB">
+<p class="introB">¡Hola! MI nombre es Henry Quenun Cruz,  actualmente soy bachiller en ciencias y letras con orientación en computación dicha carrera la obtuve en el Instituto Nacional de educación diversificada INED, 
+    antes de dicha carrera toda mi vida estudiantil la desarrolle en el colegio  mixto EDUCASA y actualmente me encuentro estudiando en universidad mariano galvez de Guatemala en la sede solola, en la facultad de ingeniería en sistemas. <br>
+    Toda mi vida me ha llamado la atención todo lo que tiene que ver con tecnología y gracias a eso hoy por hoy, me encuentro cursando el cuarto año de la carrera en mi octavo semestre es Sistemas.<br>
+     Actualmente laboro en el negocio familiar el cual esta en el campo del audio profesional, mi cargo me permite administrar los recursos, equipos de sonido como bocinas, accesorios, consolas análogas como digitales, cableado y microfonía, ecualización en vivo, grabaciones multitrack, actualización de firmware de consolas digitales, ruteo y conectividad en equipos digitales de mixers, entre muchas 
+     otras características que he adoptado a lo largo del tiempo, antes y durante mis labores en el campo del audio, tuve un tiempo de practicas educativas y profesionales realizadas en porta hotel del lago en el área de sistemas, en el cual aporté y aprendí de situaciones como cableados estructurados, mantenimiento preventivo y correctivo de equipos, manejo de chapas electronicas, instalación de equipos, 
+     formateo de computadoras e instalación de sistemas operativos y distintos softwares, etc. Quizá hay mucho que aprender aun pero sin duda el tiempo depende de la persona y la manera que obtiene los conocimientos, en estos tiempos estoy empezando a incursionar en el ámbito totalmente de desarrollo de softwares y paradigmas digitales, por lo que mi experiencia sé que irá aumentando y esto descrito es un poco de mi historia académica y laboral.
+   <br><br> algunas fotografias:
+    </p>
+    <p class="introBotro">Carrusel de fotografias</p>
+    <div class="contenidoB2">
+        
+<div class="slider-box">
+<ul>
+    <li><img src="/images/trabajo/fh.jpg" alt=""></li>
+    <li><img src="/images/trabajo/fh2.jpg" alt=""></li>
+    <li><img src="/images/trabajo/fh3.jpg" alt=""></li>
+    <li><img src="/images/trabajo/fh4.jpg" alt=""></li>
+    <li><img src="/images/trabajo/fh5.jpg" alt=""></li>
+</ul>
+</div>
+</div >
+<p class="introBotro">Tambien aqui adjunto unos cursos que estudié recientemente
+<br>y aun hace falta estudiar más cursos para crecer educativamente
+<br>curso de cisco introduccion a redes </p>
+<div ><img id="ref7" src="/images/trabajo/fh6.png" alt=""></div>
+<p class="introBotro">curso de SQL server en programacionYA</p>
+<div ><img id="ref7" src="/images/trabajo/fh7.png" alt=""></div>
+</div>
+
+</div>
+</body>
+</html>
