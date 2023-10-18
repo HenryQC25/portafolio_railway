@@ -3,7 +3,7 @@
 *::before {
   box-sizing: border-box;
 }
-
+/*este nos sirve para que la medida que asignamos a los objetos se reacoplen y no consuman de más y se deformen*/
 body {
   height: 100vh;
   background-color: #000;
@@ -12,19 +12,21 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: left;
-}
-
-.gridH {
+} /*en body aplicamos directamente el fondo */
+.gridBio {
   width: 0 auto;
   margin: 0 auto;
   display: grid;
   grid-template:
-    "header header  "
-    "contenido contenido  ";
+    "header header header "
+    "  inicioFoto1 "
+    "contenidoB   "
+    "contenidoB2";
   /*definimos plantilla*/
   grid-template-columns: 2fr 8fr 1fr;
   grid-template-rows: 2fr 8fr 1fr;
 }
+
 li {
   list-style: none;
 }
@@ -71,7 +73,7 @@ header {
   padding-left: 0 auto;
   width: 65px;
   height: 65px;
-  background-image: url("../images/logo hq.png");
+  background-image: url("/public/images/logo hq.png");
   background-size: 65px;
   background-position: center;
 }
@@ -92,7 +94,7 @@ header {
   display: block;
 }
 
-/*******************/
+/*********este apartado es para crear el menu desplegable**********/
 .dropdown_menu {
   margin-top: 15px;
   display: none;
@@ -104,7 +106,7 @@ header {
   background: rgba(7, 128, 98, 0.184);
   border-radius: 10px;
   overflow: hidden;
-  transition: 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);/*pequeño efecto para desplegar*/
 }
 
 .dropdown_menu li {
@@ -149,18 +151,116 @@ header {
 }
 
 /*********************/
-
-.contenido {
+.inicioFoto1 {
+  grid-area: inicioFoto1;
+  height: 50vh;
+  width: 200px;
   position: relative;
-  width: 55vw;
-  height: auto;
-  grid-area: contenido;
+  left: 90px;
+  top: 100px;
+  background-image: url("../images/fotoHQ.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  box-shadow: 0 0 90px rgba(146, 203, 121, 1);
+}
+.contenidoB {
+  grid-area: contenidoB;
+
+  position: relative;
+}
+
+.introB {
+  width: 910px;
+  padding: 1rem;
+  margin: 500px 0 100px -225px;
+  position: relative;
+  text-align: justify;
   color: rgb(201, 247, 93);
   backdrop-filter: brightness(40%);
-  text-align: justify;
-  word-wrap: normal;
-  text-justify: center;
-  padding: 15px;
+  padding: 1rem;
   border-radius: 50px;
-  margin-left: 310px;
+  text-justify: center;
+  text-align: center;
+  font-family: Arial;
+  font-size: 1rem;
+  word-wrap: wrap;
+}
+.introBotro {
+  width: 910px;
+  padding: 1rem;
+  margin: 90px 0 100px -225px;
+  position: relative;
+  text-align: justify;
+  color: rgb(201, 247, 93);
+  backdrop-filter: brightness(40%);
+  padding: 1rem;
+  border-radius: 50px;
+  text-justify: center;
+  text-align: center;
+  font-family: Arial;
+  font-size: 1rem;
+  word-wrap: wrap;
+}
+#ref7 {
+  margin-bottom: 100px;
+  margin-left: -80px;
+}
+
+.contenidoB2 {
+  position: relative;
+  left: -225px;
+  width: 900px;
+  overflow: hidden;
+}
+.slider-box {
+  width: 400px;
+  height: auto;
+  margin: 50px auto 0;
+  position: block;
+}
+
+.slider-box ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 12s infinite alternate ease-in-out;
+  overflow: hidden;
+}
+
+.slider-box li {
+  width: 40%;
+  list-style: none;
+  position: relative;
+}
+.slider-box img {
+  width: 100%;
+  height: 90%;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
 }

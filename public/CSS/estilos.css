@@ -87,7 +87,7 @@ header {
   margin-right: 30vw;
   position: relative;
   top: 100px;
-  background-image: url("../images/fotoHQ.jpg");
+  background-image: url("/public/images/fotoHQ.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   border-radius: 50px;
@@ -109,7 +109,7 @@ header {
   padding-left: 0 auto;
   width: 65px;
   height: 65px;
-  background-image: url("../images/logo hq.png");
+  background-image: url("/public/images/logo hq.png");
   background-size: 65px;
   background-position: center;
 }

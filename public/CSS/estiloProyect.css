@@ -14,13 +14,13 @@ body {
   background-position: left;
 }
 
-.gridContact {
+.gridP {
   width: 0 auto;
   margin: 0 auto;
   display: grid;
   grid-template:
-    "header header  "
-    "contenido contenido  ";
+    "header header "
+    "gridP gridP  ";
   /*definimos plantilla*/
   grid-template-columns: 2fr 8fr 1fr;
   grid-template-rows: 2fr 8fr 1fr;
@@ -71,7 +71,7 @@ header {
   padding-left: 0 auto;
   width: 65px;
   height: 65px;
-  background-image: url("../images/logo hq.png");
+  background-image: url("/public/images/logo hq.png");
   background-size: 65px;
   background-position: center;
 }
@@ -151,18 +151,103 @@ header {
 /*********************/
 
 .contenido {
-  top: 200px;
-  position: relative;
-  width: 55vw;
-  height: auto;
   grid-area: contenido;
+  position: relative;
+}
+
+.introBotro {
+  width: 910px;
+  padding: 1rem;
+  margin: 90px 0 100px -240px;
+  position: relative;
+  text-align: justify;
   color: rgb(201, 247, 93);
-  backdrop-filter: brightness(30%);
-  word-wrap: normal;
-  text-justify: center;
-  text-align: center;
+  backdrop-filter: brightness(40%);
   padding: 1rem;
   border-radius: 50px;
-  margin-left: 25vw;
-  font-size: 24px;
+  text-justify: center;
+  text-align: center;
+  font-family: Arial;
+  font-size: 1rem;
+  word-wrap: wrap;
+}
+
+.slider-box {
+  width: 400px;
+  height: auto;
+  margin: 50px auto 0;
+  position: block;
+}
+
+.slider-box ul {
+  display: flex;
+  padding: 0;
+  width: 700%;
+  animation: slide 12s infinite alternate ease-in-out;
+  overflow: hidden;
+}
+
+.slider-box li {
+  width: 500%;
+  list-style: none;
+  position: relative;
+}
+.slider-box img {
+  width: 100%;
+  height: 90%;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+
+.caja {
+  position: relative;
+  left: -240px;
+  width: 900px;
+  top: -90px;
+  overflow: hidden;
+  bottom: 50px;
+}
+
+.video {
+  position: relative;
+  left: -80px;
+  width: 900px;
+  top: -90px;
+  overflow: hidden;
+  bottom: 50px;
+}
+
+#c1{
+    width: 250px;
+    height: 280px;
+}
+
+#c2{
+    width: 400px;
+    height: 250px;
 }
