@@ -29,7 +29,7 @@ app.get('/bio',(req,res)=>{
    });
 })
 
-//para servir en la ruta localhost:8080/hola-mundo
+
 //app get para habilitar rutas
 app.get('/contacto',(req,res)=>{
     res.render('contacto',{
