@@ -18,14 +18,14 @@ app.use(express.static('public'))
 app.get('/',(req,res)=>{
    res.render('index',{
     nombre: 'Henry Quenun',
-    titulo: 'curso node'
+    titulo: 'Portafolio'
    });
 })
 
 app.get('/bio',(req,res)=>{
   res.render('bio',{
     nombre: 'Henry Quenun',
-    titulo: 'curso node'
+    titulo: 'Portafolio'
    });
 })
 
@@ -34,21 +34,21 @@ app.get('/bio',(req,res)=>{
 app.get('/contacto',(req,res)=>{
     res.render('contacto',{
     nombre: 'Henry Quenun',
-    titulo: 'curso node'
+    titulo: 'Portafolio'
    });
 })
 
 app.get('/habilidades',(req,res)=>{
     res.render('habilidades',{
     nombre: 'Henry Quenun',
-    titulo: 'curso node'
+    titulo: 'Portafolio'
    });
 })
 
 app.get('/proyectos',(req,res)=>{
     res.render('proyectos',{
     nombre: 'Henry Quenun',
-    titulo: 'curso node'
+    titulo: 'Portafolio'
    });
 })
 

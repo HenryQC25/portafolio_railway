@@ -21,7 +21,17 @@
 
     {{> navbar}}
 
-      <script>
+     
+
+      <div class="contenido">
+        <strong>Puedes contactarme por medio del siguiente correo: <br>
+            <strong>hquenuncruztic@gmail.com</strong>
+      </div>
+    </div>
+
+   {{> footer}}
+  </body>
+   <script>
         const toggleBtn = document.querySelector(".toggle_btn");
         const toggleBtnIcon = document.querySelector(".toggle_btn i");
         const dropdownMenu = document.querySelector(".dropdown_menu");
@@ -35,13 +45,4 @@
             : "fa-solid fa-bars";
         };
       </script>
-
-      <div class="contenido">
-        <strong>Puedes contactarme por medio del siguiente correo: <br>
-            <strong>hquenuncruztic@gmail.com</strong>
-      </div>
-    </div>
-
-   {{> footer}}
-  </body>
 </html>
