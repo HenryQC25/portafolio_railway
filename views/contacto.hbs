@@ -12,57 +12,15 @@
       referrerpolicy="no-referrer"
     />
     <title>Contacto HQ</title>
-    <link rel="stylesheet" href="/public/CSS/normalize.css" />
-    <link rel="stylesheet" href="/public/CSS/estiloContacto.css" />
+    <link rel="stylesheet" href="/CSS/normalize.css" />
+    <link rel="stylesheet" href="/CSS/estiloContacto.css" />
   </head>
   <body>
     <div class="gridContact">
-  <header>
-				<div class="logo"><a href="/">hola<span>hq</span></a></div>
-				
-			</header>
-      <nav>
-        <div class="navbar">
-          <div class="logo"></div>
-          <ul class="links">
-            <li>
-              <a href="index.html"><strong>Inicio</strong></a>
-            </li>
-            <li>
-              <a href="bio.html"><strong>Acerca de mí</strong></a>
-            </li>
-            <li>
-              <a href="habilidades.html"><strong>Habilidades</strong></a>
-            </li>
-            <li>
-              <a href="proyectos.html"><strong>Proyectos</strong></a>
-            </li>
-            <li>
-              <a href="contacto.html"><strong>Contactos</strong></a>
-            </li>
-          </ul>
-          <div class="toggle_btn">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-        </div>
-        <div class="dropdown_menu">
-          <li>
-            <a href="index.html"><strong>Inicio</strong></a>
-          </li>
-          <li>
-            <a href="bio.html"><strong>Acerca de mí</strong></a>
-          </li>
-          <li>
-            <a href="habilidades.html"><strong>Habilidades</strong></a>
-          </li>
-          <li>
-            <a href="proyectos.html"><strong>Proyectos</strong></a>
-          </li>
-          <li>
-            <a href="contacto.html"><strong>Contactos</strong></a>
-          </li>
-        </div>
-      </nav>
+  {{> header}}
+
+    {{> navbar}}
+
       <script>
         const toggleBtn = document.querySelector(".toggle_btn");
         const toggleBtnIcon = document.querySelector(".toggle_btn i");
@@ -84,10 +42,6 @@
       </div>
     </div>
 
-    <footer class="footer1">
-
-      <img id="logoFooter" src="/public//images/logo hq.png" />
-      <p><strong>Henry Isai Quenun cruz <br> 2290-20-6883</strong></p> 
-       </footer>
+   {{> footer}}
   </body>
 </html>

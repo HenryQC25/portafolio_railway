@@ -42,7 +42,7 @@ a:hover {
 
 header{
   z-index: 2;
-  margin-left: 10px;
+
 
 }
 
@@ -80,7 +80,7 @@ nav {
   padding-left: 0 auto;
   width: 65px;
   height: 65px;
-  background-image: url("/public/images/logo hq.png");
+  background-image: url("/images/logo hq.png");
   background-size: 65px;
   background-position: center;
 }
@@ -116,7 +116,7 @@ height: 80px;
 width: 110%;
 display: flex;
 justify-content: flex-start;
-margin-top: auto;
+margin-bottom:auto;
 }
 .footer1 img{
 grid-area: footer;
