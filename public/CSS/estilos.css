@@ -51,7 +51,7 @@ nav {
   /*background-color: darkseagreen;*/
   /* background-color: rgb(199, 223, 210);*/
   grid-area: navbar;
-  background: rgb(146, 203, 121);
+  background: rgb(146, 203, 122);
   background: linear-gradient(
     80deg,
     rgba(146, 203, 121, 1) 0%,
