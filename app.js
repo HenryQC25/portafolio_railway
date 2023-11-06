@@ -57,55 +57,55 @@ app.get('/proyectos/proyecto1',(req,res)=>{
     titulo: 'Portafolio'
    });
 })
-app.get('/proyecto2',(req,res)=>{
+app.get('/proyectos/proyecto2',(req,res)=>{
     res.render('proyecto2',{
     nombre: 'Henry Quenun',
     titulo: 'Portafolio'
    });
 })
-app.get('/proyecto3',(req,res)=>{
+app.get('/proyectos/proyecto3',(req,res)=>{
     res.render('proyecto3',{
     nombre: 'Henry Quenun',
     titulo: 'Portafolio'
    });
 })
-app.get('/proyecto4',(req,res)=>{
+app.get('/proyectos/proyecto4',(req,res)=>{
     res.render('proyecto4',{
     nombre: 'Henry Quenun',
     titulo: 'Portafolio'
    });
 })
-app.get('/proyecto5',(req,res)=>{
+app.get('/proyectos/proyecto5',(req,res)=>{
     res.render('proyecto5',{
     nombre: 'Henry Quenun',
     titulo: 'Portafolio'
    });
 })
-app.get('/proyecto6',(req,res)=>{
+app.get('/proyectos/proyecto6',(req,res)=>{
     res.render('proyecto6',{
     nombre: 'Henry Quenun',
     titulo: 'Portafolio'
    });
 })
-app.get('/proyecto7',(req,res)=>{
+app.get('/proyectos/proyecto7',(req,res)=>{
     res.render('proyecto7',{
     nombre: 'Henry Quenun',
     titulo: 'Portafolio'
    });
 })
-app.get('/proyecto8',(req,res)=>{
+app.get('/proyectos/proyecto8',(req,res)=>{
     res.render('proyecto8',{
     nombre: 'Henry Quenun',
     titulo: 'Portafolio'
    });
 })
-app.get('/proyecto9',(req,res)=>{
+app.get('/proyectos/proyecto9',(req,res)=>{
     res.render('proyecto9',{
     nombre: 'Henry Quenun',
     titulo: 'Portafolio'
    });
 })
-app.get('/proyecto10',(req,res)=>{
+app.get('/proyectos/proyecto10',(req,res)=>{
     res.render('proyecto10',{
     nombre: 'Henry Quenun',
     titulo: 'Portafolio'
