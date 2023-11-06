@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Proyecto 10 HQ</title>
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/estiloProyectos2.css">
+</head>
+<body>
+    
+      
+    <nav >
+        <div class="navbar">
+            <div class="logo"></div>
+            <ul class="links">
+                <li><a href="index.html"><strong>Inicio</strong></a></li>
+                <li><a href="bio.html"><strong>Acerca de mí</strong></a></li>
+                <li><a href="habilidades.html"><strong>Habilidades</strong></a></li>
+                <li><a href="proyectos.html"><strong>Proyectos</strong></a></li>
+                <li><a href="contacto.html"><strong>Contactos</strong></a></li>
+            </ul>
+<div class="toggle_btn">
+    <i class="fa-solid fa-bars"></i>
+</div>
+    </div> 
+    <div class="dropdown_menu ">
+        <li><a href="index.html"><strong>Inicio</strong></a></li>
+        <li><a href="bio.html"><strong>Acerca de mí</strong></a></li>
+        <li><a href="habilidades.html"><strong>Habilidades</strong></a></li>
+        <li><a href="proyectos.html"><strong>Proyectos</strong></a></li>
+        <li><a href="contacto.html"><strong>Contactos</strong></a></li>
+    </div>
+</nav>
+
+<div class="gridP">
+<div class="contenido">
+
+   <p class="introBotro"><strong>Calculadora</strong><br>
+        Esta calculadora la realice en java y fue uno de mis primeros proyectos
+    <br>utilizando el ide de netbeans por lo cual quedé satisfecho
+    <br>con el resultado y lo aprendido en dicho proyecto.
+            </p>
+ <div class="caja">           
+<div class="slider-box">
+    <ul>
+        <li><img id="c1" src="../images/p5/c1.png" alt=""></li>
+        <li><img id="c1" src="../images/p5/c2.png" alt=""></li>
+        <li><img id="c1" src="../images/p5/c1.png" alt=""></li>
+        <li><img id="c1" src="../images/p5/c2.png" alt=""></li>
+  
+    </ul>
+      </div>
+     </div>
+
+
+</div>
+</div>
+<br><br>
+<button class="verP"><a  href="../template/proyectos.html">Regresar</a></button>
+
+
+<footer class="footer1">
+
+      <img id="logoFooter" src="../images/logo hq.png" />
+      <p><strong>Henry Isai Quenun cruz <br> 2290-20-6883</strong></p> 
+       </footer>
+
+       <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropdownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function(){
+        dropdownMenu.classList.toggle('open')
+        const isOpen = dropdownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+</script>
+
+</body>
+</html>

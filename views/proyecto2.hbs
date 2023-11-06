@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Proyecto 2 HQ</title>
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/estiloProyectos2.css">
+</head>
+<body>
+    
+      
+    {{> navbar}}
+
+<div class="gridP">
+<div class="contenido">
+
+     <p class="introBotro"><strong>Uso de javascrypt y conexion a Mongo DB</strong><br>
+       Durante este proyecto se mantuvo una serie de explicaciones y practicas en las cuales <br>
+       se trataba de ver el funcionamiento y conexion de una base de datos como Mongo DB <br>
+       de tal modo que manejamos archivos JSON para insertar objetos en dicha BD es por <br>
+       eso que se llevó a cabo la practica y verificacion de rutas incluso se trató de entender <br>
+       y conocer los estados de un navegador en cuanto a respuestas y solicitudes por medio <br>de códigos
+            </p>
+ <div class="caja">           
+<div class="slider-box">
+    <ul>
+        <li><img id="c5" src="../images/pMongo/s1.png" alt=""></li>
+        <li><img id="c5" src="../images/pMongo/s2.png" alt=""></li>
+        <li><img id="c5" src="../images/pMongo/s3.png" alt=""></li>
+        <li><img id="c5" src="../images/pMongo/s4.png" alt=""></li>
+        <li><img id="c5" src="../images/pMongo/s5.png" alt=""></li>
+    </ul>
+      </div>
+     </div>
+      <div class="video">
+        <iframe src="https://drive.google.com/file/d/197BDyjZ089-xn39MXLIXvtAc1RYX-agk/preview" width="640" height="480" allow="autoplay"></iframe>
+    </div>
+
+
+</div>
+</div>
+
+<br><br>
+<button class="verP"><a  href="/proyectos">Regresar</a></button>
+
+{{> footer}}
+
+       <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropdownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function(){
+        dropdownMenu.classList.toggle('open')
+        const isOpen = dropdownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+</script>
+
+</body>
+</html>

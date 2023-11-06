@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Proyecto 5 HQ</title>
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/estiloProyectos2.css">
+</head>
+<body>
+    
+      
+{{> navbar}}
+
+<div class="gridP">
+<div class="contenido">
+
+    <div class="introBotro"><strong>instaCpc</strong><br>
+        Este proyecto es un monitoreo y verificacion de componentes tanto software como hardware 
+            <br> este proyecto soluciona por medio de atajos las vistas de herramientas que posee
+            <br> el SO y es una manera de centralizartodo en un solo espacio, por la cuestion que se complica
+            <br>el aprender comandos o ver la manera de acceder si no se conoce una opcion similar.
+            </div>
+ <div class="caja">           
+<div class="slider-box">
+    <ul>
+        <li><img src="../images/p1/s1.png" alt=""></li>
+        <li><img src="../images/p1/s2.png" alt=""></li>
+        <li><img src="../images/p1/s3.png" alt=""></li>
+        <li><img src="../images/p1/s4.png" alt=""></li>
+        <li><img src="../images/p1/s5.png" alt=""></li>
+        <li><img src="../images/p1/s6.png" alt=""></li>
+        <li><img src="../images/p1/s7.png" alt=""></li>
+        <li><img src="../images/p1/s8.png" alt=""></li>
+    </ul>
+      </div>
+     </div>
+     <div class="video">
+        <iframe src="https://drive.google.com/file/d/1bO3KH5T7bgKN0b3Ql4h8EEDqSbXN-Hwx/preview" width="640" height="480" allow="autoplay"></iframe>
+    </div>
+
+</div>
+</div>
+<br><br>
+<button class="verP"><a  href="/proyectos">Regresar</a></button>
+
+
+
+{{> footer}}
+
+       <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropdownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function(){
+        dropdownMenu.classList.toggle('open')
+        const isOpen = dropdownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+</script>
+
+</body>
+</html>

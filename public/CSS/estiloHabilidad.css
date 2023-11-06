@@ -7,7 +7,7 @@
 body {
   height: 100vh;
   background-color: #000;
-  background-image: url("https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+  background-image: url("../images/fondo.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -15,18 +15,12 @@ body {
 }
 
 .gridH {
-  width: 0 auto;
-  margin: 0 auto;
   display: grid;
   grid-template:
-    
-     "header  "
-    "navbar  navbar "
-    "contenido contenido  "
-    "footer  footer  ";
+    "contenido   ";
   /*definimos plantilla*/
-  grid-template-columns: 2fr 8fr 1fr;
-  grid-template-rows: 2fr 8fr 1fr;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr ;
 }
 li {
   list-style: none;
@@ -40,11 +34,6 @@ a:hover {
   color: orange;
 }
 
-header{
-  z-index: 2;
-
-
-}
 
 nav {
   /*background-color: darkseagreen;*/
@@ -80,7 +69,7 @@ nav {
   padding-left: 0 auto;
   width: 65px;
   height: 65px;
-  background-image: url("/images/logo hq.png");
+  background-image: url("../images/logo hq.png");
   background-size: 65px;
   background-position: center;
 }
@@ -104,19 +93,20 @@ nav {
 
 
 .footer1{
-  grid-area: footer;
-  background: rgb(177, 250, 229);
+
+ background: rgb(146, 203, 122);
   background: linear-gradient(
     80deg,
-    rgb(121, 203, 187) 0%,
-    rgb(177, 233, 223) 44%,
-    rgb(213, 250, 248) 92%
+    rgba(146, 203, 121, 1) 0%,
+    rgba(208, 253, 215, 1) 44%,
+    rgba(216, 240, 202, 1) 92%
   );
 height: 80px;
-width: 110%;
+width: 100%;
+margin-top: 2vh; /*modificado*/
 display: flex;
 justify-content: flex-start;
-margin-bottom:auto;
+
 }
 .footer1 img{
 grid-area: footer;
@@ -124,11 +114,6 @@ grid-area: footer;
   height: 100% ;
   
 }
-
-
-
-
-
 
 /*******************/
 .dropdown_menu {
@@ -187,18 +172,28 @@ grid-area: footer;
 }
 
 /*********************/
-
 .contenido {
-  position: relative;
-  width: 55vw;
-  height: auto;
   grid-area: contenido;
+  position: relative;
+  max-width: 90%;
+  margin: 150px auto 0 auto;
+  padding: 20px;
   color: rgb(201, 247, 93);
   backdrop-filter: brightness(40%);
   text-align: justify;
   word-wrap: normal;
   text-justify: center;
-  padding: 15px;
-  border-radius: 50px;
-  margin-left: 310px;
+  border-radius: 20px;
+}
+
+@media (max-width: 767px) {
+  .contenido {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 576px) {
+  .contenido {
+    margin: 100px auto 0 auto;
+  }
 }

@@ -5,33 +5,34 @@
 }
 
 body {
-  height: 100vh;
- /* background-color: #000;*/
-  background-image: url("https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+  /* background-color: #000; */
+  background-image: url("../images/fondo.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: left;
+  margin: 0; /* Añadir margen 0 para evitar el espacio adicional */
+  padding: 0; /* Añadir relleno 0 para evitar el espacio adicional */
 }
 
 .gridInicio {
-  width: 0 auto;
-  margin: 0 auto;
+  display: flex;
+  flex-flow: wrap;
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template:
-  "header header "
-    "navbar  navbar "
-    "contenido contenido inicioFoto "
-    "footer  footer  footer";
-
-  /*definimos plantilla*/
-  grid-template-columns: 2fr 8fr 1fr;
-  grid-template-rows: 2fr 8fr 1fr;
+    "inicioFoto bienv";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
 }
 
 li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -41,10 +42,9 @@ a:hover {
   color: orange;
 }
 
-header{
+header {
   z-index: 2;
   margin-left: 10px;
-
 }
 
 nav {
@@ -59,7 +59,7 @@ nav {
     rgba(216, 240, 202, 1) 92%
   );
   width: 100%;
-  position: fixed;
+  position: relative; /* Cambiado a relative */
   padding: 0 0.8rem;
   z-index: 1;
   border-bottom: 2px solid;
@@ -67,58 +67,55 @@ nav {
   font-size: 20px;
 }
 
-.contenido {
-  grid-area: contenido;
-  min-height: 20vh;
-  height: 30px;
-  width: 30px;
-  min-width: 20vw;
+.bienv {
+  grid-area: bienv;
+  background-color: rgba(64, 66, 51, 0.6);
+  width: 20%; /* Cambia el ancho a 100% para que ocupe todo el ancho disponible */
+  height: auto; /* Usa altura automática para ajustar el contenido */
   position: relative;
-  top: -100px;
-  margin: 20vw 15vw 0 24vw;
-  color: rgb(201, 247, 93);
-  backdrop-filter: blur(10px);
-  padding: 1rem 4rem;
-
-  border-radius: 50px;
-  text-justify: center;
-  text-align: center;
+  margin: 10vh auto; /* Ajusta el margen vertical y centraliza horizontalmente */
+  color: rgb(183, 250, 13);
+  backdrop-filter: blur(10px); /* Reduce el valor del desenfoque */
+  padding: 1rem; /* Ajusta el relleno */
+  border-radius: 20px; /* Reduce el valor del radio del borde */
+  text-align: justify;
   font-family: Arial;
-  font-size: 1.2rem;
+  font-size: 1rem; /* Cambia el tamaño de la fuente a 1rem */
+  word-wrap: break-word;
 }
 
-.footer1{
-  grid-area: footer;
-  background: rgb(177, 250, 229);
+
+
+
+.footer1 {
+  background: rgb(146, 203, 122);
   background: linear-gradient(
     80deg,
-    rgb(121, 203, 187) 0%,
-    rgb(177, 233, 223) 44%,
-    rgb(213, 250, 248) 92%
+    rgba(146, 203, 121, 1) 0%,
+    rgba(208, 253, 215, 1) 44%,
+    rgba(216, 240, 202, 1) 92%
   );
-height: 80px;
-width: 110%;
-display: flex;
-justify-content: flex-start;
-margin-top: 100px;
-}
-.footer1 img{
-grid-area: footer;
-  width: 5%;
-  height: 100% ;
-  
+  height: 80px;
+  width: 100%;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: flex-start;
+  position: absolute; /* Cambiado a absolute */
+  bottom: 0; /* Anclar al fondo */
 }
 
+.footer1 img {
+  height: 100%;
+}
 
 .inicioFoto {
   grid-area: inicioFoto;
   height: 50vh;
   width: 200px;
-  margin-top: 20px;
-  margin-right: 30vw;
   position: relative;
-  top: 100px;
-  background-image: url("/images/fotoHQ.jpg");
+  margin-bottom: 1vh;
+  top: 13vh;
+  background-image: url("../images/fotoHQ.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   border-radius: 50px;
@@ -135,12 +132,13 @@ grid-area: footer;
   align-items: center;
   justify-content: space-between;
 }
+
 .navbar .logo {
   position: left;
   padding-left: 0 auto;
   width: 65px;
   height: 65px;
-  background-image: url("/images/logo hq.png");
+  background-image: url("../images/logo hq.png");
   background-size: 65px;
   background-position: center;
 }
@@ -151,7 +149,7 @@ grid-area: footer;
 }
 
 .navbar .links:hover {
-  scale: 1.02;
+  transform: scale(1.02); /* Corregir "scale" */
 }
 
 .navbar .toggle_btn {
@@ -161,7 +159,7 @@ grid-area: footer;
   display: block;
 }
 
-/*******************/
+/* Dropdown Menu */
 .dropdown_menu {
   margin-top: 15px;
   display: none;
@@ -173,7 +171,7 @@ grid-area: footer;
   background: rgba(7, 128, 98, 0.184);
   border-radius: 10px;
   overflow: hidden;
-  transition: 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .dropdown_menu li {
@@ -187,13 +185,12 @@ grid-area: footer;
   height: 200px;
 }
 
-/*****************/
-/*responsive*/
-/*media es una regla de bloque*/
+/* Responsive Styles */
 @media (max-width: 991px) {
   .navbar .links {
     display: none;
   }
+
   .navbar .toggle_btn {
     display: block;
   }
@@ -208,6 +205,7 @@ grid-area: footer;
     left: 2rem;
     width: unset;
   }
+
   .navbar .toggle_btn {
     display: none;
   }
@@ -217,4 +215,45 @@ grid-area: footer;
   }
 }
 
-/*********************/
+/* Añadir reglas de medios para textos responsivos */
+@media (max-width: 767px) {
+.gridInicio {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+    grid-template-areas:
+      "inicioFoto"
+      "bienv"; /* Cambia el orden en pantallas pequeñas */
+      
+  }
+  .inicioFoto{
+    margin-bottom: 8vh;
+  }
+
+  .bienv {
+        margin-bottom: 7vh;
+     width: 50%;
+    font-size: 1rem; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+  }
+
+}
+
+@media (max-width: 576px) {
+  .gridInicio {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+    grid-template-areas:
+      "inicioFoto"
+      "bienv"; /* Cambia el orden en pantallas pequeñas */
+  }
+
+  .inicioFoto{
+    margin-top: -6vh;
+    margin-bottom: 7vh;
+  }
+  .bienv {
+    
+     width: 50%;
+    font-size: 0.9rem; /* Ajusta el tamaño de fuente para pantallas aún más pequeñas */
+     margin-top: 9vh;
+   
+  }
+}
+
