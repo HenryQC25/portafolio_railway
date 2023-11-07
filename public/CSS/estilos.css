@@ -6,7 +6,7 @@
 
 body {
   /* background-color: #000; */
-  background-image: url("../images/fondo.jpg");
+  background-image: url("../images/fondoo.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -35,31 +35,22 @@ li {
 
 a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(252, 247, 247);
 }
 
 a:hover {
-  color: orange;
+  color: rgb(166, 236, 4);
 }
 
-header {
-  z-index: 2;
-  margin-left: 10px;
-}
+
 
 nav {
-  /*background-color: darkseagreen;*/
-  /* background-color: rgb(199, 223, 210);*/
-  grid-area: navbar;
-  background: rgb(146, 203, 122);
-  background: linear-gradient(
-    80deg,
-    rgba(146, 203, 121, 1) 0%,
-    rgba(208, 253, 215, 1) 44%,
-    rgba(216, 240, 202, 1) 92%
-  );
+
+  background: rgb(62,67,72);
+background: linear-gradient(90deg, rgba(62,67,72,1) 32%,
+ rgba(116,124,141,1) 86%);
   width: 100%;
-  position: relative; /* Cambiado a relative */
+  position: fixed;
   padding: 0 0.8rem;
   z-index: 1;
   border-bottom: 2px solid;
@@ -75,7 +66,6 @@ nav {
   position: relative;
   margin: 10vh auto; /* Ajusta el margen vertical y centraliza horizontalmente */
   color: rgb(183, 250, 13);
-  backdrop-filter: blur(10px); /* Reduce el valor del desenfoque */
   padding: 1rem; /* Ajusta el relleno */
   border-radius: 20px; /* Reduce el valor del radio del borde */
   text-align: justify;
@@ -87,23 +77,20 @@ nav {
 
 
 
-.footer1 {
-  background: rgb(146, 203, 122);
-  background: linear-gradient(
-    80deg,
-    rgba(146, 203, 121, 1) 0%,
-    rgba(208, 253, 215, 1) 44%,
-    rgba(216, 240, 202, 1) 92%
-  );
-  height: 80px;
-  width: 100%;
-  margin-top: 2vh;
-  display: flex;
-  justify-content: flex-start;
-  position: absolute; /* Cambiado a absolute */
-  bottom: 0; /* Anclar al fondo */
-}
+.footer1{
 
+color: aliceblue;
+  background: rgb(62,67,72);
+background: linear-gradient(90deg, rgba(62,67,72,1) 32%, rgba(116,124,141,1) 86%);
+height: 80px;
+width: 100%;
+margin-top: 2vh; /*modificado*/
+display: flex;
+justify-content: flex-start;
+
+    margin-top: 29vh;
+  
+}
 .footer1 img {
   height: 100%;
 }
@@ -111,7 +98,7 @@ nav {
 .inicioFoto {
   grid-area: inicioFoto;
   height: 50vh;
-  width: 200px;
+  width: 250px;
   position: relative;
   margin-bottom: 1vh;
   top: 13vh;
@@ -119,10 +106,11 @@ nav {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   border-radius: 50px;
-  box-shadow: 0 0 90px rgba(146, 203, 121, 1);
+  box-shadow: 0 0 30px rgb(166, 236, 4);
 }
 
 .navbar {
+  color: aliceblue;
   width: 100%;
   height: 68px;
   max-width: 1100px;
@@ -138,22 +126,28 @@ nav {
   padding-left: 0 auto;
   width: 65px;
   height: 65px;
-  background-image: url("../images/logo hq.png");
+  background-image: url("../images/Imagen2.png");
   background-size: 65px;
   background-position: center;
 }
 
+
 .navbar .links {
+  color: aliceblue;
   display: flex;
   gap: 2rem; /*gap ayuda a dar espacio parejo*/
 }
+/*agregue esto*/
+.links strong{
+  color: aliceblue;
+}
 
 .navbar .links:hover {
-  transform: scale(1.02); /* Corregir "scale" */
+  transform: scale(1.01); /* Corregir "scale" */
 }
 
 .navbar .toggle_btn {
-  color: black;
+  color: rgb(194, 226, 10);
   font-size: 1.5rem;
   cursor: pointer;
   display: block;
@@ -168,7 +162,9 @@ nav {
   right: 2rem;
   top: 60px;
   width: 150px;
-  background: rgba(7, 128, 98, 0.184);
+  /*agregue*/
+  color: aliceblue;
+  background: rgb(62,67,72,0.9);
   border-radius: 10px;
   overflow: hidden;
   transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -225,13 +221,16 @@ nav {
       
   }
   .inicioFoto{
-    margin-bottom: 8vh;
+   
   }
 
   .bienv {
         margin-bottom: 7vh;
      width: 50%;
     font-size: 1rem; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+  }
+  .footer1{
+    margin-top: 10vh;
   }
 
 }
@@ -246,7 +245,7 @@ nav {
 
   .inicioFoto{
     margin-top: -6vh;
-    margin-bottom: 7vh;
+    margin-bottom: 8vh;
   }
   .bienv {
     
@@ -254,6 +253,10 @@ nav {
     font-size: 0.9rem; /* Ajusta el tamaño de fuente para pantallas aún más pequeñas */
      margin-top: 9vh;
    
+  }
+
+  .footer1{
+    margin-top: 10vh;
   }
 }
 
