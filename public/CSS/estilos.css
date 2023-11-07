@@ -5,7 +5,7 @@
 }
 
 body {
-  /* background-color: #000; */
+  height: 80vh;
   background-image: url("../images/fondoo.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -23,7 +23,7 @@ body {
   display: grid;
   grid-template:
     "inicioFoto bienv";
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 2fr;
   grid-template-rows: 1fr;
   justify-items: center;
   align-items: center;
@@ -79,7 +79,7 @@ background: linear-gradient(90deg, rgba(62,67,72,1) 32%,
 
 
 .footer1{
-
+position: relative;
 color: aliceblue;
   background: rgb(62,67,72);
 background: linear-gradient(90deg, rgba(62,67,72,1) 32%, rgba(116,124,141,1) 86%);
@@ -88,7 +88,6 @@ width: 100%;
 margin-top: 2vh; /*modificado*/
 display: flex;
 justify-content: flex-start;
-
     margin-top: 29vh;
   
 }
@@ -222,11 +221,12 @@ justify-content: flex-start;
       
   }
   .inicioFoto{
-   margin-top: 150px;
+   margin-top: 5vh;
   }
 
   .bienv {
-        margin-bottom: 7vh;
+    margin-top: 17vh;
+        margin-bottom: 8vh;
      width: 50%;
     font-size: 1rem; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
   }

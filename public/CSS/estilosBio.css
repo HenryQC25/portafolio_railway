@@ -156,7 +156,7 @@ a:hover {
 
 
 .footer1{
-
+position: relative;
 color: aliceblue;
   background: rgb(62,67,72);
 background: linear-gradient(90deg, rgba(62,67,72,1) 32%, rgba(116,124,141,1) 86%);

@@ -5,7 +5,7 @@
 }
 
 body {
-  
+  height: 100vh;
   background-color: #000;
   background-image: url("../images/fondoo.jpg");
   background-repeat: no-repeat;
@@ -14,13 +14,22 @@ body {
   background-position: left;
 }
 
+.Bodyproyecto2{
+   height: 180vh;
+   width: 100%;
+   overflow: scroll;
+}
+
 .contenido {
   margin: 0 auto;
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden;
 }
 
 .gridP {
-  width: 100%; 
-  height: 100%; 
+  width: 90%; 
+  height: 90%; 
   margin: 0 auto;
   bottom: 20px;
   display: grid;
@@ -136,7 +145,7 @@ background: linear-gradient(90deg, rgba(62,67,72,1) 32%, rgba(116,124,141,1) 86%
   background: rgb(62,67,72);
 background: linear-gradient(90deg, rgba(62,67,72,1) 32%, rgba(116,124,141,1) 86%);
   height: 80px;
-  width: 100%;
+
   margin-top: 2vh;
   display: flex;
   justify-content: flex-start;
@@ -369,37 +378,32 @@ button {
 
 /**/
 @media (min-width: 720px) {
-.footer1{
-    width: 120%;
+  .footer1 {
+    width: 100%; /* Cambiar a un valor que se ajuste a tu diseño */
   }
-
 }
 
 @media (min-width: 620px) {
-.footer1{
-    width: 200%;
+  .footer1 {
+    width: 100%; /* Cambiar a un valor que se ajuste a tu diseño */
   }
-
 }
 
 @media (min-width: 320px) {
-.footer1{
-    width: 180%;
+  .footer1 {
+    width: 100%; /* Cambiar a un valor que se ajuste a tu diseño */
   }
 
-  button{
+
+  button {
     margin: 0 auto;
   }
 
-
-  .slider-box{
+  .slider-box {
     position: relative;
-    width: 100%;
-  margin-left: 0 auto;
-width: 450px;
-align-items: center;
-justify-content: center;
-
+    width: 450px;
+    margin-left: auto; /* Cambiado a "auto" para centrar horizontalmente */
+    align-items: center;
+    justify-content: center;
   }
-
 }
