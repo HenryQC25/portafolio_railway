@@ -222,7 +222,7 @@ justify-content: flex-start;
       
   }
   .inicioFoto{
-   
+   margin-top: 150px;
   }
 
   .bienv {
@@ -245,7 +245,7 @@ justify-content: flex-start;
   }
 
   .inicioFoto{
-    margin-top: -6vh;
+    margin-top: 2vh;
     margin-bottom: 8vh;
   }
   .bienv {
