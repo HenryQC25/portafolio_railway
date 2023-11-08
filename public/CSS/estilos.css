@@ -5,7 +5,7 @@
 }
 
 body {
-  height: 80vh;
+  height: 77vh;
   background-image: url("../images/fondoo.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -65,17 +65,14 @@ background: linear-gradient(90deg, rgba(62,67,72,1) 32%,
   width: 20%; /* Cambia el ancho a 100% para que ocupe todo el ancho disponible */
   height: auto; /* Usa altura automática para ajustar el contenido */
   position: relative;
-  margin: 10vh auto; /* Ajusta el margen vertical y centraliza horizontalmente */
+  margin-left: -250px; /* Ajusta el margen vertical y centraliza horizontalmente */
   color: rgb(183, 250, 13);
   padding: 1rem; /* Ajusta el relleno */
   border-radius: 20px; /* Reduce el valor del radio del borde */
-  text-align: justify;
   font-family: Arial;
   font-size: 1rem; /* Cambia el tamaño de la fuente a 1rem */
   word-wrap: break-word;
 }
-
-
 
 
 .footer1{
@@ -100,6 +97,7 @@ justify-content: flex-start;
   height: 50vh;
   width: 250px;
   position: relative;
+  margin-left: 400px;
   margin-bottom: 1vh;
   top: 13vh;
   background-image: url("../images/fotoHQ.jpg");
@@ -212,7 +210,7 @@ justify-content: flex-start;
 }
 
 /* Añadir reglas de medios para textos responsivos */
-@media (max-width: 767px) {
+@media (max-width: 1271px) {
 .gridInicio {
     grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
     grid-template-areas:
@@ -222,12 +220,13 @@ justify-content: flex-start;
   }
   .inicioFoto{
    margin-top: 5vh;
+   margin-left:-350px;
   }
 
   .bienv {
     margin-top: 17vh;
         margin-bottom: 8vh;
-     width: 50%;
+     width: 150px;
     font-size: 1rem; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
   }
   .footer1{
@@ -247,13 +246,14 @@ justify-content: flex-start;
   .inicioFoto{
     margin-top: 2vh;
     margin-bottom: 8vh;
+    margin-left: 35px;
   }
   .bienv {
     
      width: 50%;
     font-size: 0.9rem; /* Ajusta el tamaño de fuente para pantallas aún más pequeñas */
      margin-top: 9vh;
-   
+   margin-left: 35px;
   }
 
   .footer1{
@@ -261,3 +261,28 @@ justify-content: flex-start;
   }
 }
 
+@media (max-width: 390px) {
+  .gridInicio {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+    grid-template-areas:
+      "inicioFoto"
+      "bienv"; /* Cambia el orden en pantallas pequeñas */
+  }
+
+  .inicioFoto{
+    margin-top: 2vh;
+    margin-bottom: 8vh;
+    margin-left: 15px;
+  }
+  .bienv {
+    
+     width: 50%;
+    font-size: 0.9rem; /* Ajusta el tamaño de fuente para pantallas aún más pequeñas */
+     margin-top: 9vh;
+   margin-left: 15px;
+  }
+
+  .footer1{
+    margin-top: 10vh;
+  }
+}
