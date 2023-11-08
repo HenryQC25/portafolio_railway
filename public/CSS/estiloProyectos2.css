@@ -303,7 +303,7 @@ background: linear-gradient(90deg, rgba(62,67,72,1) 32%, rgba(116,124,141,1) 86%
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
   margin-bottom: 30px;
-  
+  margin-top: 205px;
 }
 
 
@@ -386,6 +386,7 @@ button {
   box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
 }
 .verP {
+ 
   --color: #1d1f1e;
   --hover: rgb(49, 54, 52) ;
 }
@@ -441,10 +442,17 @@ button {
   height: 118vh;
    overflow: hidden;
 }
+
+.contenido8 {
+  width: 275px;
+  height: 100vh;
+   overflow: hidden;
+}
+
 .video{
 margin-top: 150px;
 width: 250px;
-height: 21px;
+height: 250px;
 }
 
 .introBotro{
@@ -474,13 +482,13 @@ height: 21px;
 }
 
 .Bodyproyecto5{
-  height: 100vh;
+  height: 110vh;
  
 }
 
 
 .Bodyproyecto8{
-  height: 120vh;
+  height: 99vh;
  
 }
 
