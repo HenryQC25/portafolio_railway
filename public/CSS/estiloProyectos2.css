@@ -404,36 +404,86 @@ button {
 
 }
 
-@media (max-width: 376px) {
+
+/****************************************/
+@media (max-width: 431px) {
 .footer1{
     width: 100%;
   }
 
+.verP{
+  margin-top: -35px;
+  margin-bottom: 40px;
+}
+
 .contenido {
-  width: 370px;
-  height: 210vh;
+  width: 250px;
+  height: 140vh;
+   overflow: hidden;
+}
+.contenido2 {
+  width: 275px;
+  height: 180vh;
    overflow: hidden;
 }
 
+.contenido3 {
+  width: 275px;
+  height: 105vh;
+   overflow: hidden;
+}
+
+.video{
+margin-top: 150px;
+width: 250px;
+height: 21px;
+}
+
 .introBotro{
+  font-size: 0.8rem;
+  text-align:justify;
+  width: 240px;
+  height: auto;
   margin-bottom: 25px;
 }
 
 .Bodyproyecto2{
 
-  height: 240vh;
+  height: 160vh;
+}
+.Bodyproyecto2-1{
+
+  height: 180vh;
 }
 
 .Bodyproyecto3{
 
   height: 240vh;
 }
+.Bodyproyecto4{
+  height: 130vh;
+  z-index: 2;
+}
+
+.Bodyproyecto5{
+  height: 120vh;
+  z-index: 6;
+}
+
+
+.Bodyproyecto8{
+  height: 120vh;
+ 
+}
 
 body{
   height: 211vh;
 }
 .video{
+  margin-top: 260px;
   margin-bottom: 25px;
+  width: 250px;
+  height: 150px;
 }
 
 #c5{
@@ -443,8 +493,8 @@ width: 350px;
 }
 
 .caja{
-  width: 370px;
-
+  width: 340px;
+  height: 360px;
 }
   button{
     margin: 0 auto;
@@ -453,9 +503,10 @@ width: 350px;
 
   .slider-box{
     position: relative;
-    width: 100%;
+   width: 450px;
+    height: auto;
 margin-left: 0 auto;
-width: 450px;
+display: flex;
 align-items: center;
 justify-content: center;
 

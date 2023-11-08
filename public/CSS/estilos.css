@@ -261,12 +261,14 @@ justify-content: flex-start;
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 431px) {
   .gridInicio {
+   
     grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
     grid-template-areas:
       "inicioFoto"
       "bienv"; /* Cambia el orden en pantallas pequeñas */
+       height: 90vh;
   }
 
   .inicioFoto{
