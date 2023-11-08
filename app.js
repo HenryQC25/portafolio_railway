@@ -7,7 +7,7 @@ const port = process.env.PORT //configuramos el puerto
 //utilizacion de hbs para el renderizado de la pagina web
 app.set('view engine','hbs')
 
-//uso de parciales "codigo que se repite en ,as de un lugar o paginas web"
+//uso de partials "codigo que se repite en ,as de un lugar o paginas web"
 //agregamos partials
 hbs.registerPartials(__dirname +'/views/partials')
 
