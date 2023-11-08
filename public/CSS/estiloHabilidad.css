@@ -17,10 +17,10 @@ body {
 .gridH {
   display: grid;
   grid-template:
-    "contenido"
-    "porcentajes";
+    "contenido porcentajes"
+    "contenido porcentajes";
   /*definimos plantilla*/
-  grid-template-columns: 1fr ;
+  grid-template-columns: 1fr 1fr ;
   grid-template-rows: 1fr ;
 }
 li {
@@ -178,6 +178,7 @@ grid-area: footer;
   grid-area: contenido;
   position: relative;
   max-width: 90%;
+  max-height: 90%;
   margin: 150px auto 0 auto;
   padding: 20px;
   color: rgb(201, 247, 93);
@@ -198,11 +199,11 @@ grid-area: footer;
 .porcentajes {
   grid-area: porcentajes;
   position: relative;
-  margin: 25px auto 25px auto;
+  margin: 155px auto 25px auto;
   color: rgb(201, 247, 93);
   background: rgb(62,67,72,0.6);
-  width: 60vw;
-  height: auto;
+  max-width: 95%;
+  max-height: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content:center;
@@ -281,9 +282,80 @@ grid-area: footer;
 
 
 /*********************/
-@media (max-width: 767px) {
+@media (max-width: 1052px) {
   .contenido {
     max-width: 95%;
+
+  }
+  .porcentajes{
+     height: 100%;
+    margin: 20px 60px 40px 60px;
+  }
+  .contenedor{
+    margin: 20px 60px 40px 60px;
+  }
+
+  .gridH {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+    grid-template-areas:
+      "contenido"
+      "porcentajes"; /* Cambia el orden en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 868px) {
+  .contenido {
+    max-width: 95%;
+
+  }
+  .porcentajes{
+     height: 110%;
+    margin: 20px 60px 40px 60px;
+  }
+  .contenedor{
+    margin: 20px 60px 40px 10px;
+  }
+
+  .gridH {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+    grid-template-areas:
+      "contenido"
+      "porcentajes"; /* Cambia el orden en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 715px) {
+  .contenido {
+    max-width: 95%;
+
+  }
+  .porcentajes{
+     height: 110%;
+    margin: 20px 60px 40px 60px;
+  }
+  .contenedor{
+    margin: 10px 40px 40px 10px;
+  }
+
+  .gridH {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+    grid-template-areas:
+      "contenido"
+      "porcentajes"; /* Cambia el orden en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 655px) {
+  .contenido {
+    max-width: 95%;
+
+  }
+  .porcentajes{
+     height: 115%;
+    margin: 20px 60px 40px 60px;
+  }
+  .contenedor{
+    margin: 6px 10px 10px 6px;
   }
 }
 
@@ -294,23 +366,30 @@ grid-area: footer;
 
   .contenedor{
     margin-right: 20%;
+   
   }
+
+ 
 }
 
 
 
-@media (max-width: 431px) {
+@media (max-width: 554px) {
   .porcentajes {
     min-width: 215px;
-    width: 180px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 425px;
+    height: 1400px;
+   margin: 50px auto 50px auto;
   }
 
   .contenedor{
-    margin-right: 20%;
+    margin-right: 10%;
+    margin: 6px 30px 10px 30px;
   }
- 
+ .gridH {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+    grid-template-areas:
+      "contenido"
+      "porcentajes"; /* Cambia el orden en pantallas pequeñas */
+  }
 }
