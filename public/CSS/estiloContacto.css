@@ -196,18 +196,6 @@ height: 180vh;
 
 }
 
-@media (max-width: 576px) {
-  .contenido {
-    margin: 150px auto 0 auto; 
-    font-size: 18px; 
-  }
-  
-  body{
-height: 120vh;
-
-}
-}
-
 
 /*media es una regla de bloque*/
 @media (max-width: 991px) {
@@ -235,4 +223,33 @@ height: 120vh;
   .dropdown_menu {
     display: none;
   }
+}
+
+
+
+@media (max-width: 933px) {
+.contenido p{
+
+height: 15vh;
+}
+
+.contenido img{
+  position: relative;
+  width:400px ;
+  height: 400px;
+  margin-bottom: 18vh;
+}
+}
+
+
+@media (max-width: 576px) {
+  .contenido {
+    margin: 150px auto 0 auto; 
+    font-size: 18px; 
+  }
+  
+  body{
+height: 120vh;
+
+}
 }

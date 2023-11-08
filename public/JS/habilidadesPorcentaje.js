@@ -26,5 +26,5 @@ let progresscircle = document.getElementById(progress);
         if (cantidad >= valorEstatico) {
           clearInterval(tiempo);
         }
-      }, 20);
+      }, 60);
 }
