@@ -17,7 +17,8 @@ body {
 .gridH {
   display: grid;
   grid-template:
-    "contenido   ";
+    "contenido"
+    "porcentajes";
   /*definimos plantilla*/
   grid-template-columns: 1fr ;
   grid-template-rows: 1fr ;
@@ -187,14 +188,129 @@ grid-area: footer;
   border-radius: 20px;
 }
 
+/******************/
+/*porcentajes*/
+ :root{
+          --color1:rgb(209, 212, 15);
+      }
+
+
+.porcentajes {
+  grid-area: porcentajes;
+  position: relative;
+  margin: 25px auto 25px auto;
+  color: rgb(201, 247, 93);
+  background: rgb(62,67,72,0.6);
+  width: 60vw;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  border-radius: 30px;
+  padding: 5px;
+  flex-direction: row;
+  
+}
+
+
+
+  .contenedor {
+  background-color: rgb(62,67,72,0.6);
+  height: 150px;
+  width: 125px;
+  position: relative;
+  border-radius: 30px;
+  margin: 40px 60px 40px 60px;
+}
+
+.svg {
+  position: relative;
+  transform: translate(-50%, -50%);
+  left: 50%; /* Centrar horizontalmente */
+  top: 50%; /* Centrar verticalmente */
+  height: 100%;
+  width: 100%;
+}
+      .box_percentage {
+        height: 125px;
+        width: 100%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 36%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .percentage {
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 1em;
+        color:var(--color1);/*variable root --color1*/
+      }
+  .progress2{
+    fill: none;
+    stroke-width: 15;
+    stroke: rgb(139, 133, 133);
+
+  }
+      .progress {
+        fill: none;
+        stroke-width: 15;
+        stroke: var(--color1);
+        transform: rotate(-90deg);
+        transform-origin: center;
+        stroke-linecap: round;
+        stroke-dasharray: 630;
+        stroke-dashoffset: 630;
+        transition: .3s;
+      }
+      .title{
+          line-height: 1rem;
+          width: 100%;
+          position:absolute;
+          bottom: 0;
+          font-family: sans-serif;
+          text-align: center;
+          font-size: .4em;
+          color:var(--color1);
+         font-weight: bold;
+
+      }
+
+
+
+/*********************/
 @media (max-width: 767px) {
   .contenido {
     max-width: 95%;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 511.5px) {
   .contenido {
     margin: 100px auto 0 auto;
   }
+
+  .contenedor{
+    margin-right: 20%;
+  }
+}
+
+
+
+@media (max-width: 431px) {
+  .porcentajes {
+    min-width: 215px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenedor{
+    margin-right: 20%;
+  }
+ 
 }

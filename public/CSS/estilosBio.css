@@ -189,7 +189,7 @@ justify-content: flex-start;
   margin: 0 auto;
   bottom: 100px;
   position: relative;
-  text-align: justify;
+  text-align:justify;
   color: rgb(201, 247, 93);
   /*agregue esto*/
   background: rgb(62,67,72,0.8);
