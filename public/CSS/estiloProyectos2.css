@@ -433,10 +433,14 @@ button {
 
 .contenido3 {
   width: 275px;
-  height: 105vh;
+  height: 80vh;
    overflow: hidden;
 }
-
+.contenido4 {
+  width: 275px;
+  height: 118vh;
+   overflow: hidden;
+}
 .video{
 margin-top: 150px;
 width: 250px;
@@ -465,17 +469,22 @@ height: 21px;
   height: 240vh;
 }
 .Bodyproyecto4{
-  height: 130vh;
-  z-index: 2;
+  height: 100vh;
+
 }
 
 .Bodyproyecto5{
-  height: 120vh;
-  z-index: 6;
+  height: 100vh;
+ 
 }
 
 
 .Bodyproyecto8{
+  height: 120vh;
+ 
+}
+
+.Bodyproyecto9{
   height: 120vh;
  
 }
@@ -492,13 +501,16 @@ body{
 
 #c5{
 width: 350px;
+}
 
-
+#c3, #c1{
+width: 350px;
+height: auto;
 }
 
 .caja{
   width: 340px;
-  height: 360px;
+  height: 400px;
 }
   button{
     margin: 0 auto;
@@ -508,7 +520,7 @@ width: 350px;
   .slider-box{
     position: relative;
    width: 450px;
-    height: auto;
+    height: 450;
 margin-left: 0 auto;
 display: flex;
 align-items: center;
